@@ -1,0 +1,78 @@
+{
+    "autoApprovalSettings": {
+        "enabled": true,
+        "commands": [
+            {
+                "pattern": "^php artisan.*",
+                "description": "Auto-approve all php artisan commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan migrate.*",
+                "description": "Auto-approve database migrations",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan db:seed.*",
+                "description": "Auto-approve database seeding",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan make:.*",
+                "description": "Auto-approve artisan make commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan serve.*",
+                "description": "Auto-approve artisan serve command",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan config:.*",
+                "description": "Auto-approve config commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan cache:.*",
+                "description": "Auto-approve cache commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan route:.*",
+                "description": "Auto-approve route commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan view:.*",
+                "description": "Auto-approve view commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^php artisan optimize.*",
+                "description": "Auto-approve optimization commands",
+                "enabled": true
+            },
+            {
+                "pattern": "^composer.*",
+                "description": "Auto-approve composer commands",
+                "enabled": false
+            },
+            {
+                "pattern": "^npm.*",
+                "description": "Auto-approve npm commands",
+                "enabled": false
+            }
+        ],
+        "excludePatterns": [
+            "^php artisan down.*",
+            "^php artisan migrate:fresh.*--force",
+            "^php artisan db:wipe.*"
+        ]
+    },
+    "projectSettings": {
+        "name": "NoteFlow",
+        "type": "laravel",
+        "framework": "Laravel 11",
+        "language": "fr"
+    }
+}
